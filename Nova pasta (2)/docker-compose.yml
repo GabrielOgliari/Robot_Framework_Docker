@@ -1,0 +1,76 @@
+version: "2.17.2"
+services:
+  robot:
+    build: /
+    volumes:
+      - ./Results/0:/robot/Results
+    #scale: 5
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+    
+  robot1:
+    build: /
+    volumes:
+      - ./Results/1:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot2:
+    build: /
+    volumes:
+      - ./Results/2:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot3:
+    build: /
+    volumes:
+      - ./Results/3:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot4:
+    build: /
+    volumes:
+      - ./Results/4:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot5:
+    build: /
+    volumes:
+      - ./Results/5:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot6:
+    build: /
+    volumes:
+      - ./Results/6:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot7:
+    build: /
+    volumes:
+      - ./Results/7:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
+  robot8:
+    build: /
+    volumes:
+      - ./Results/8:/robot/Results
+    command: 
+      - sh
+      - -c
+      - "cd /robot && ${Comando_Robot}"
